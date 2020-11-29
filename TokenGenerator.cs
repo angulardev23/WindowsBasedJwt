@@ -29,7 +29,7 @@ namespace AuthTest
             var token = new JwtSecurityToken(_config["Jwt:Issuer"],
               _config["Jwt:Issuer"],
               GetClaims(userInfo),
-              expires: DateTime.Now.AddMinutes(1),
+              expires: DateTime.Now.AddMinutes(120),
               signingCredentials: credentials);
 
             return new JwtSecurityTokenHandler().WriteToken(token);
