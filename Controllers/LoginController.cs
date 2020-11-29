@@ -13,6 +13,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using AuthTest.Model;
+using AuthTest.Authentication;
 
 namespace AuthTest.Controllers
 {

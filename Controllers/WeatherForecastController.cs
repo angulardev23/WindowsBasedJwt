@@ -37,7 +37,7 @@ namespace AuthTest.Controllers
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
-            var gar = _contextAccessor.HttpContext.GetUserName();
+            var userName = _contextAccessor.HttpContext.GetUserName();
 
             var rng = new Random();
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
